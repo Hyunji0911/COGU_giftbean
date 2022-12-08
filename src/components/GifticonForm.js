@@ -1,8 +1,27 @@
+import styled from "styled-components";
+
+export const GifticonFormContainer = styled.div`
+	width: 100%;
+	background-color: yellowgreen;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+`;
+
+export const Form = styled.form`
+	background-color: yellow;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+`;
+
 function GifticonForm() {
 	return (
-		<div>
+		<GifticonFormContainer>
 			<header>header</header>
-			<form>
+			<Form>
 				<label for="category-select">Category</label>
 				<select
 					name="categories"
@@ -57,17 +76,17 @@ function GifticonForm() {
 					size="10"></input>
 
 				<label for="memo">메모</label>
-				<input
+				<textarea
 					type="text"
 					id="memo"
 					name="memo"
 					required
 					minlength="4"
 					maxlength="8"
-					size="10"></input>
+					size="10"></textarea>
 				<button>버튼</button>
-			</form>
-		</div>
+			</Form>
+		</GifticonFormContainer>
 	);
 }
 

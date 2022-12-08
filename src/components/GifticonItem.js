@@ -2,11 +2,21 @@ import GifticonDetailModal from "./GifticonDetailModal";
 import { useState } from "react";
 import styled from "styled-components";
 
+export const GifticonItemContainer = styled.button`
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+`;
+
 export const ModalBtn = styled.button`
 	width: 230px;
 	padding: 20px;
 
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
@@ -26,14 +36,16 @@ function GifticonItem() {
 	};
 
 	return (
-		<ModalBtn onClick={openModalHandler}>
-			{isOpen ? <GifticonDetailModal /> : null}
-			<div>banner</div>
-			<div>title</div>
-			<div>pic</div>
-			<div>name</div>
-			<div>date</div>
-		</ModalBtn>
+		<GifticonItemContainer>
+			<ModalBtn onClick={openModalHandler}>
+				{isOpen ? <GifticonDetailModal /> : null}
+				<div>banner</div>
+				<div>title</div>
+				<div>pic</div>
+				<div>name</div>
+				<div>date</div>
+			</ModalBtn>
+		</GifticonItemContainer>
 	);
 }
 

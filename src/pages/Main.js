@@ -4,11 +4,11 @@ import Nav from "../components/Nav";
 
 function Main() {
 	return (
-		<div>
+		<>
 			<Header />
 			<GifticonItem />
 			<Nav />
-		</div>
+		</>
 	);
 }
 
