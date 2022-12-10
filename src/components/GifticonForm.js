@@ -59,7 +59,7 @@ function GifticonForm({ headertext, buttontext }) {
           maxlength="8"
           size="10"
         ></input>
-
+        
         <label for="itemName">상품 이름</label>
         <input
           type="text"

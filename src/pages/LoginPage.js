@@ -1,5 +1,7 @@
 import React from "react";
 import giftbeanLogo from "../Logo.png";
+import {GreenButton, GreenBottomButton} from "../components/styledComponents/GreenButton"
+import Toggle from "../components/styledComponents/Toggle_isAvailable"
 
 function LoginPage() {
   return (
@@ -9,13 +11,17 @@ function LoginPage() {
         <input placeholder="example@mail.com" />
         <input placeholder="password" />
       </div>
+      <Toggle />
+      <GreenButton>이메일로 로그인하기</GreenButton>
+      <GreenButton>처음이신가요?</GreenButton>
+      <GreenBottomButton>Bottom Name</GreenBottomButton>
 
-      <button>이메일로 로그인하기</button>
-      <button>처음이신가요?</button>
     </main>
   );
 }
 export default LoginPage;
+
+//jsDoc (vs코드 변수명이나 함수명에 주석)
 
 // 1. 시멘틱하지 않다 ** >> 1. DX / 2.SEO (next.js가 핫한 이유)
 // 2. 생각 이상으로 쪼개야 한다 >> 유효성 검사를 고려한
