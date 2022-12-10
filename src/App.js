@@ -12,6 +12,8 @@ import SettingsPage from "./pages/SettingsPage";
 import SignUpPage from "./pages/SignUpPage";
 import UserInfoEditPage from "./pages/UserInfoEditPage";
 
+// ! git branch 테스트입니다.
+
 function App() {
 	return (
 		<BrowserRouter>
