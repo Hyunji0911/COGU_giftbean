@@ -12,6 +12,7 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import SignUpPage from "./pages/SignUpPage";
 import UserInfoEditPage from "./pages/UserInfoEditPage";
+import ComponentTestPage from "./pages/ComponentTestPage";
 
 const GlobalStyle = createGlobalStyle`
 	* {

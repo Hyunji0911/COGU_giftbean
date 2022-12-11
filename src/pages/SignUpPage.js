@@ -1,11 +1,11 @@
 import React from "react";
-import giftbeanLogo from "../Logo.png";
+import Logo from "../assets/Logo.svg";
 import {TextInput, TextInputCenter} from "../components/styledComponents/Input"
 
 function SignUpPage() {
   return (
     <div>
-      SignUpPage <img alt="Logo" src={giftbeanLogo}></img>
+      SignUpPage <img alt="Logo" src={Logo}></img>
       <div>
         <TextInputCenter placeholder="이름" />
         <TextInputCenter type="email" placeholder="이메일" />
