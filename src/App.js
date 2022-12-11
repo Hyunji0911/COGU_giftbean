@@ -29,8 +29,8 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-		<BrowserRouter>
-		<GlobalStyle />
+    <BrowserRouter>
+      <GlobalStyle />
       <div>
         <nav>
           <li>

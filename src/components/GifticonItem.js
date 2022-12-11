@@ -15,16 +15,16 @@ export const GifticonItemContainer = styled.ul`
 function GifticonItem() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const openModalHandler = () => {
+  const modalHandler = () => {
     setIsOpen(!isOpen);
   };
 
   return (
     <GifticonItemContainer>
       {isOpen ? (
-        <GifticonDetailModal openModalHandler={openModalHandler} />
+        <GifticonDetailModal modalHandler={modalHandler} />
       ) : null}
-      <Item modalHandler={openModalHandler} />
+      <Item modalHandler={modalHandler} />
     </GifticonItemContainer>
   );
 }
