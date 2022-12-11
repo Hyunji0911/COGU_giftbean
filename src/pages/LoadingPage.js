@@ -1,11 +1,11 @@
 import React from "react";
 import LoadingIndicator from "../components/LoadingIndicator";
-import giftbeanLogo from "../Logo.png";
+import Logo from "../assets/Logo.svg";
 
 function LoadingPage() {
   return (
     <div>
-      <img alt="Logo" src={giftbeanLogo}></img>
+      <img alt="Logo" src={Logo}></img>
       <LoadingIndicator />
     </div>
   );

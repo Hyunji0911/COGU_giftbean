@@ -1,6 +1,6 @@
-import styled,{ css } from "styled-components";
+import styled from "styled-components";
 import {Link} from "react-router-dom"
-import Left_arrow from "../../Left_arrow.png"
+import Left_arrow from "../../assets/Left_arrow.svg"
 
 const Button =styled.button`
     border: none;

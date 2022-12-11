@@ -11,7 +11,7 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import SignUpPage from "./pages/SignUpPage";
 import UserInfoEditPage from "./pages/UserInfoEditPage";
-import TestPage from "./pages/TestPage";
+import ComponentTestPage from "./pages/ComponentTestPage";
 
 function App() {
 	return (
@@ -19,7 +19,7 @@ function App() {
 			<div>
 				<nav>
 					<li>
-						<Link to="/TestPage">TestPage</Link>
+						<Link to="/ComponentTestPage">ComponentTestPage</Link>
 					</li>
 					<li>
 						<Link to="/">Main</Link>
@@ -51,8 +51,8 @@ function App() {
 				</nav>
 				<Routes>
 					<Route
-						path="/TestPage"
-						element={<TestPage />}
+						path="/ComponentTestPage"
+						element={<ComponentTestPage />}
 					/>
 					<Route
 						path="/"

@@ -1,12 +1,12 @@
 import React from "react";
-import giftbeanLogo from "../Logo.png";
+import Logo from "../assets/Logo.svg";
 import Toggle from "../components/styledComponents/Toggle"
 import BackButton from "../components/styledComponents/BackButton"
 
-function TestPage() {
+function ComponentTestPage() {
   return (
     <main>
-      <img alt="Logo" width="50" src={giftbeanLogo}></img>
+      <img alt="Logo" width="50" src={Logo}></img>
       <Toggle />
       <p />
       <BackButton linkTo={"/"}/>
@@ -15,7 +15,7 @@ function TestPage() {
     </main>
   );
 }
-export default TestPage;
+export default ComponentTestPage;
 
 //jsDoc (vs코드 변수명이나 함수명에 주석)
 
