@@ -11,12 +11,16 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import SignUpPage from "./pages/SignUpPage";
 import UserInfoEditPage from "./pages/UserInfoEditPage";
+import TestPage from "./pages/TestPage";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<div>
 				<nav>
+					<li>
+						<Link to="/TestPage">TestPage</Link>
+					</li>
 					<li>
 						<Link to="/">Main</Link>
 					</li>
@@ -46,6 +50,10 @@ function App() {
 					</li>
 				</nav>
 				<Routes>
+					<Route
+						path="/TestPage"
+						element={<TestPage />}
+					/>
 					<Route
 						path="/"
 						element={<Main />}
