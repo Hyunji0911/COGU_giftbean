@@ -24,6 +24,9 @@ const TextInputCenter = styled(TextInput)`
 const Label = styled.label`
   font-size: 16px;
   color: #000;
+  display: block;
+  margin-left: 10px;
+  margin-bottom: 5px;
 `;
 
 const SelectBox = styled.select`
@@ -51,14 +54,14 @@ const LabelTextInput = ({
   onChange = (e) => {},
 }) => {
   return (
-    <>
+    <div className="labelTextInput-Container">
       <Label htmlFor={id}>{text}</Label>
       <TextInput
         name={id}
         placeholder={placeholder}
         onChange={(e) => onChange(e)}
       />
-    </>
+    </div>
   );
 };
 

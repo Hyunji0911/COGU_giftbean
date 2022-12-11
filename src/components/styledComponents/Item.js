@@ -53,7 +53,7 @@ const Container = styled.li`
   }
 `;
 
-const Item = ({data, modalHandler}) => {
+const Item = ({data, modalHandler = () => {}}) => {
   return (
     <Container onClick={modalHandler}>
       <span className="brand">브랜드명</span>
