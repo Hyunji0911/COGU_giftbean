@@ -16,6 +16,7 @@ const GreenButton = styled.button`
   font-size: 20px;
   border: none;
 `
+
 const GreenBottomButton = styled.button`
     background: #4C8C0D;
     width: 390px;
@@ -26,10 +27,9 @@ const GreenBottomButton = styled.button`
     align-items: center;
     text-align: center;
     font-family: 'Noto Sans KR';
-    font-weight: 700;
+    font-weight: 700; 
     font-size: 24px;
     border: none;
-
 `
 
 

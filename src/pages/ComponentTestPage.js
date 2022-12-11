@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/Logo.svg";
 import Toggle from "../components/styledComponents/Toggle"
 import BackButton from "../components/styledComponents/BackButton"
+import NavigationBar from "../components/styledComponents/NavigationBar"
 
 function ComponentTestPage() {
   return (
@@ -10,7 +11,7 @@ function ComponentTestPage() {
       <Toggle />
       <p />
       <BackButton linkTo={"/"}/>
-
+      <NavigationBar />
 
     </main>
   );

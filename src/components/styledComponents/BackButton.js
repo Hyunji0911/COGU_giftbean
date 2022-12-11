@@ -9,7 +9,7 @@ const Button =styled.button`
 function BackButton ({linkTo}) {
     return (
         <Link to={linkTo}>
-            <Button><img alt="뒤로가기버튼" src={Left_arrow} height="13"></img></Button>
+            <Button><img alt="뒤로가기버튼" src={Left_arrow} height="13.7"></img></Button>
         </Link>
     );
 }
