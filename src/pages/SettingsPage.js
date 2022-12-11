@@ -1,10 +1,10 @@
 import React from "react";
 import Nav from "../components/Nav";
-import giftbeanLogo_row from "../Logo_row.png";
+import Logo_row from "../assets/Logo_row.svg";
 function SettingsPage() {
   return (
     <div>
-      <img alt="header logo" src={giftbeanLogo_row}></img>
+      <img alt="header logo" src={Logo_row}></img>
       <p>웰콩, 스푼0911님!</p>
       <div>
         <div>

@@ -1,10 +1,10 @@
 import React from "react";
-import giftbeanLogo from "../Logo.png";
+import Logo from "../assets/Logo.svg";
 
 function SignUpPage() {
   return (
     <div>
-      SignUpPage <img alt="Logo" src={giftbeanLogo}></img>
+      SignUpPage <img alt="Logo" src={Logo}></img>
       <div>
         <input placeholder="이름" />
         <input placeholder="이메일" />

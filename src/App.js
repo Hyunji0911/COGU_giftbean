@@ -11,12 +11,16 @@ import LoginPage from "./pages/LoginPage";
 import SettingsPage from "./pages/SettingsPage";
 import SignUpPage from "./pages/SignUpPage";
 import UserInfoEditPage from "./pages/UserInfoEditPage";
+import ComponentTestPage from "./pages/ComponentTestPage";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<div>
 				<nav>
+					<li>
+						<Link to="/ComponentTestPage">ComponentTestPage</Link>
+					</li>
 					<li>
 						<Link to="/">Main</Link>
 					</li>
@@ -46,6 +50,10 @@ function App() {
 					</li>
 				</nav>
 				<Routes>
+					<Route
+						path="/ComponentTestPage"
+						element={<ComponentTestPage />}
+					/>
 					<Route
 						path="/"
 						element={<Main />}
