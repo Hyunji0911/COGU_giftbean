@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import {SelectBox, LabelTextInput, Label, TextInput, CheckLabel, CheckBox} from "../components/styledComponents/Input"
 
 export const GifticonFormContainer = styled.div`
   width: 100%;
@@ -38,8 +39,8 @@ function GifticonForm({ headertext, buttontext }) {
         <div>{headertext}</div>
       </GifticonFormHeader>
       <Form>
-        <label for="category-select">Category</label>
-        <select name="categories" id="category-select">
+        <label htmlFor="category-select">Category</label>
+        <SelectBox name="categories" id="category-select">
           <option value="">--선택하콩--</option>
           <option value="dog">Dog</option>
           <option value="cat">Cat</option>
@@ -47,9 +48,13 @@ function GifticonForm({ headertext, buttontext }) {
           <option value="parrot">Parrot</option>
           <option value="spider">Spider</option>
           <option value="goldfish">Goldfish</option>
-        </select>
+        </SelectBox>
 
-        <label for="brand">브랜드명</label>
+        <LabelTextInput id="brand" text="브랜드명" placeholder="브랜드명을 입력하세요" />
+        <LabelTextInput id="itemName" text="제품명" placeholder="제품명을 입력하세요" />
+        <LabelTextInput id="barcode" text="바코드번호" placeholder="브랜드명을 입력하세요" />
+        
+        {/* <label for="brand">브랜드명</label>
         <input
           type="text"
           id="brand"
@@ -80,10 +85,10 @@ function GifticonForm({ headertext, buttontext }) {
           minlength="4"
           maxlength="8"
           size="10"
-        ></input>
+        ></input> */}
 
-        <label for="expirationDate">유효기간</label>
-        <input
+        <Label htmlFor="expirationDate">유효기간</Label>
+        <TextInput
           type="date"
           id="expirationDate"
           name="expirationDate"
@@ -91,9 +96,9 @@ function GifticonForm({ headertext, buttontext }) {
           minlength="4"
           maxlength="8"
           size="10"
-        ></input>
-
-        <label for="memo">메모</label>
+        ></TextInput>
+        <LabelTextInput id="memo" text="브랜드명" placeholder="브랜드명을 입력하세요" />
+        {/* <label for="memo">메모</label>
         <textarea
           type="text"
           id="memo"
@@ -102,10 +107,10 @@ function GifticonForm({ headertext, buttontext }) {
           minlength="4"
           maxlength="8"
           size="10"
-        ></textarea>
+        ></textarea> */}
         <SubmitButton>{buttontext}</SubmitButton>
       </Form>
-    </GifticonFormContainer>
+    </GifticonFormContainer >
   );
 }
 
