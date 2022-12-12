@@ -21,21 +21,40 @@ const LoginContainer = styled.div`
   position: relative;
 `;
 
+const GapBox = styled.div`
+width: 390px;
+height: 60px;
+`;
+
+const LoginInput = styled(TextInputCenter)`
+  margin-top: 20px;
+`;
+
+const LoginButton = styled(GreenButton)`
+  margin-top: 20px;
+  height: 46px;
+`;
+
+const Validation = styled.div`
+  width: 230px;
+  height: 20px;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #a72800;
+`;
+
 function LoginPage() {
   return (
     <main>
       <LoginContainer>
         <img alt="Logo" src={Logo}></img>
-        <div>
-          <TextInputCenter type="email" placeholder="이메일" />
-          <TextInputCenter type="password" placeholder="비밀번호" />
-          <button>
-            <GreenButton> 이메일로 로그인하기 </GreenButton>{" "}
-          </button>
-          <button>
-            <GreenButton> 처음이신가요? </GreenButton>
-          </button>
-        </div>
+        <GapBox/>
+        <LoginInput type="email" placeholder="example@mail.com" />
+        <LoginInput type="password" placeholder="password" />
+        <Validation> 아이디/비밀번호가 올바르지 않습니다. </Validation>
+        <LoginButton> 이메일로 로그인하기 </LoginButton>{" "}
+        <LoginButton> 처음이신가요? </LoginButton>
       </LoginContainer>
     </main>
   );
