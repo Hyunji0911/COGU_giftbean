@@ -1,18 +1,24 @@
-import React from "react";
+import { React, useState } from "react";
+import styled from "styled-components";
 import LoadingIndicator from "../components/LoadingIndicator";
 import Logo from "../assets/Logo.svg";
+const LoadingPageWrapper = styled.div`
+  width: 390px;
+  height: 844px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 280px;
+`;
 
 function LoadingPage() {
+  const [isLoading, setIsLoading] = useState(false);
   return (
-    <div>
+    <LoadingPageWrapper>
       <img alt="Logo" src={Logo}></img>
       <LoadingIndicator />
-    </div>
+      {/* {isLoading ? <LoadingIndicator /> : <LoadingIndicator />} */}
+    </LoadingPageWrapper>
   );
 }
 
 export default LoadingPage;
-
-// 상위 컬렉션은 하나
-// 도큐 유저의 아이디
-// 필드 : 값
