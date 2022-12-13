@@ -4,12 +4,6 @@ import Logo from "../assets/Logo.svg";
 import { TextInputCenter } from "../components/styledComponents/Input";
 import { GreenButton } from "../components/styledComponents/GreenButton";
 import BackButton from "../components/styledComponents/BackButton";
-const SignUpHeader = styled.div`
-  height: 107px;
-`;
-const SignUpFooter = styled.div`
-  height: 116px;
-`;
 const SignUpContainer = styled.div`
   border: solid 1px red;
   width: 390px;
@@ -18,6 +12,19 @@ const SignUpContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  & > img{
+    padding-top: 110px;
+  }
+`;
+const SignUpHeader = styled.div`
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+`;
+const SignUpFooter = styled.div`
+  height: 116px;
 `;
 const SignUpWrapper = styled.div`
   /* border: solid 1px blue; */
@@ -43,8 +50,9 @@ const Validation = styled.div`
 function SignUpPage() {
   return (
     <SignUpContainer>
-      <BackButton linkTo={"/LoginPage"} />
-      <SignUpHeader />
+      <SignUpHeader>
+        <BackButton linkTo={"/login"} />
+      </SignUpHeader>
 
       <img alt="Logo" src={Logo}></img>
       <SignUpWrapper>
