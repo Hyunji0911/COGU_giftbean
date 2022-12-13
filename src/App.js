@@ -47,22 +47,22 @@ function App() {
             <Link to="/used">Used Gifticon</Link>
           </li>
           <li>
-            <Link to="/LoadingPage">LoadingPage</Link>
+            <Link to="/loading">LoadingPage</Link>
           </li>
           <li>
-            <Link to="/LoginPage">LoginPage</Link>
+            <Link to="/login">LoginPage</Link>
           </li>
           <li>
-            <Link to="/SignUpPage">SignUpPage</Link>
+            <Link to="/signup">SignUpPage</Link>
           </li>
           <li>
-            <Link to="/SettingsPage">SettingsPage</Link>
+            <Link to="/settings">SettingsPage</Link>
           </li>
           <li>
-            <Link to="/UserInfoEditPage">UserInfoEditPage</Link>
+            <Link to="/userinfoedit">UserInfoEditPage</Link>
           </li>
           <li>
-            <Link to="/ComponentTestPage">ComponentTestPage</Link>
+            <Link to="/componenttest">ComponentTestPage</Link>
           </li>
         </nav>
         <Routes>
@@ -70,12 +70,12 @@ function App() {
           <Route path="/add" element={<AddGifticon />} />
           <Route path="/edit" element={<EditGifticon />} />
           <Route path="/used" element={<UsedGifticon />} />
-          <Route path="/LoadingPage" element={<LoadingPage />} />
-          <Route path="/LoginPage" element={<LoginPage />} />
-          <Route path="/SignUpPage" element={<SignUpPage />} />
-          <Route path="/SettingsPage" element={<SettingsPage />} />
-          <Route path="/UserInfoEditPage" element={<UserInfoEditPage />} />
-          <Route path="/ComponentTestPage" element={<ComponentTestPage />} />
+          <Route path="/loading" element={<LoadingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signUp" element={<SignUpPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/userinfoedit" element={<UserInfoEditPage />} />
+          <Route path="/componenttest" element={<ComponentTestPage />} />
         </Routes>
       </div>
     </BrowserRouter>
