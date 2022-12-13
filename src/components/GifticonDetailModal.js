@@ -2,21 +2,14 @@ import styled from "styled-components";
 import modify from "../assets/modify.svg";
 import barcode from "../assets/barcode.svg";
 import close from "../assets/close.svg";
+import Toggle from "./styledComponents/Toggle";
+import { GreenBottomButton } from "./styledComponents/GreenButton";
 
 const ModalContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  button {
-    background: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
 
   .bg {
     position: fixed;
@@ -44,8 +37,14 @@ const ModalContainer = styled.div`
   }
 
   .close {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     position: absolute;
-    top: -30px;
+    top: -35px;
     right: 0;
     span {
       font-weight: 400;
@@ -62,6 +61,14 @@ const ModalContainer = styled.div`
     align-items: center;
     width: 310px;
     height: 30px;
+    button {
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
   }
 
   h3.brand {
@@ -120,16 +127,13 @@ const ModalContainer = styled.div`
   .barcode {
     margin-top: 20px;
   }
+`;
 
-  .useItem {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    border-radius: 0 0 10px 10px;
-    border: 0;
-    background-color: #4c8c0d;
-  }
+const UseItemButton = styled(GreenBottomButton)`
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
 `;
 
 const GifticonDetailModal = ({ modalHandler }) => {
@@ -145,7 +149,7 @@ const GifticonDetailModal = ({ modalHandler }) => {
             <span>닫기</span> <img src={close} />
           </button>
           <div className="modal-header">
-            <div>토글 버튼</div>
+            <Toggle />
             <button>
               <img src={modify} />
             </button>
@@ -161,7 +165,7 @@ const GifticonDetailModal = ({ modalHandler }) => {
           <div className="barcode">
             <img src={barcode} />
           </div>
-          <button className="useItem">사용하기</button>
+          <UseItemButton>사용하기</UseItemButton>
         </article>
       </div>
     </ModalContainer>
