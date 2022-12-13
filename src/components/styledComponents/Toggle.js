@@ -29,8 +29,8 @@ const ToggleContainer = styled.div`
  
 
   > .toggle-container {
-    width: 33.67px;
-    height: 15.5px;
+    width: 38.67px;
+    height: 20.5px;
     border-radius: 30px;
     border: solid 3px;
     border-color: #4C8C0D;

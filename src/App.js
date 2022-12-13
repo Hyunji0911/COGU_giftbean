@@ -61,6 +61,9 @@ function App() {
           <li>
             <Link to="/UserInfoEditPage">UserInfoEditPage</Link>
           </li>
+          <li>
+            <Link to="/ComponentTestPage">ComponentTestPage</Link>
+          </li>
         </nav>
         <Routes>
           <Route path="/" element={<Main />} />
@@ -72,6 +75,7 @@ function App() {
           <Route path="/SignUpPage" element={<SignUpPage />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
           <Route path="/UserInfoEditPage" element={<UserInfoEditPage />} />
+          <Route path="/ComponentTestPage" element={<ComponentTestPage />} />
         </Routes>
       </div>
     </BrowserRouter>
