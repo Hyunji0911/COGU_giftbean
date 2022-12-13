@@ -12,54 +12,46 @@ const NavContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 25px;
+  padding: 0px 36px;
   box-shadow: 0 -5px 5px -5px rgba(35, 67, 24, 0.5);
 `;
-const Button = styled.button`
+const Button = styled(Link)`
+  width: 36px;
+  height: 36px;
   border: none;
   background-color: transparent;
   transition: all 0.5s ease-out;
+  outline: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &:hover {
-    transform: translateY(-0.8px);
+    transform: translateY(-1.2px);
   }
 `;
-const AddButton = styled.div`
-  border: none;
+const AddButton = styled(Button)`
   width: 72px;
   height: 76px;
   margin-bottom: 35px;
   border-radius: 50%;
   background-color: #eaffca;
-  transition: all 0.5s ease-out;
   box-shadow: 0 2px 2px 2px rgba(35, 67, 24, 0.15);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &:hover {
-    transform: translateY(-0.8px);
-  }
 `;
 
 function NavigationBar() {
   return (
     <NavContainer>
-      <Link to="/">
-        <Button>
-          <img alt="Home Button" src={NavHomeImg} />
-        </Button>
-      </Link>
-      <Link to="/add">
-        <AddButton>
-          <img alt="Add Button" src={NavPlusImg} height="38" />
-        </AddButton>
-      </Link>
-      <Link to="/SettingsPage">
-        <Button>
-          <img alt="Settings Button" src={NavSettingsImg} height="36" />
-        </Button>
-      </Link>
+      <Button to="/">
+        <img alt="Home Button" src={NavHomeImg} />
+      </Button>
+      <AddButton to="/add">
+        <img alt="Add Button" src={NavPlusImg} height="38" />
+      </AddButton>
+      <Button to="/SettingsPage">
+        <img alt="Settings Button" src={NavSettingsImg} height="36" />
+      </Button>
     </NavContainer>
   );
 }

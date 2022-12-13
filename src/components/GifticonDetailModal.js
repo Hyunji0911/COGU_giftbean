@@ -4,6 +4,7 @@ import barcode from "../assets/barcode.svg";
 import close from "../assets/close.svg";
 import Toggle from "./styledComponents/Toggle";
 import { GreenBottomButton } from "./styledComponents/GreenButton";
+import { Link } from "react-router-dom";
 
 const ModalContainer = styled.div`
   display: flex;
@@ -61,14 +62,6 @@ const ModalContainer = styled.div`
     align-items: center;
     width: 310px;
     height: 30px;
-    button {
-      background: none;
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
   }
 
   h3.brand {
@@ -136,6 +129,15 @@ const UseItemButton = styled(GreenBottomButton)`
   border-radius: 0 0 10px 10px;
 `;
 
+const Button = styled(Link)`
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+`;
+
 const GifticonDetailModal = ({ modalHandler }) => {
   return (
     <ModalContainer>
@@ -150,9 +152,9 @@ const GifticonDetailModal = ({ modalHandler }) => {
           </button>
           <div className="modal-header">
             <Toggle />
-            <button>
+            <Link to="/edit">
               <img src={modify} />
-            </button>
+            </Link>
           </div>
           <h3 className="brand">브랜드명</h3>
           <div className="icon">
