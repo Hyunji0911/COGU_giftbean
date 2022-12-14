@@ -4,8 +4,9 @@ import NavHomeImg from "../../assets/NavHomeImg.svg";
 import NavSettingsImg from "../../assets/NavSettingsImg.svg";
 import NavPlusImg from "../../assets/NavPlusImg.svg";
 
-const NavContainer = styled.div`
+const NavContainer = styled.ul`
   box-sizing: border-box;
+  position: fixed;
   width: 390px;
   height: 60px;
   background-color: #89bf15;
@@ -42,17 +43,25 @@ const AddButton = styled(Button)`
 
 function NavigationBar() {
   return (
-    <NavContainer>
-      <Button to="/">
-        <img alt="Home Button" src={NavHomeImg} />
-      </Button>
-      <AddButton to="/add">
-        <img alt="Add Button" src={NavPlusImg} height="38" />
-      </AddButton>
-      <Button to="/SettingsPage">
-        <img alt="Settings Button" src={NavSettingsImg} height="36" />
-      </Button>
-    </NavContainer>
+
+      <NavContainer>
+        <li>
+          <Button to="/">
+            <img alt="Home Button" src={NavHomeImg} />
+          </Button>
+        </li>
+        <li>
+          <AddButton to="/add">
+            <img alt="Add Button" src={NavPlusImg} height="38" />
+          </AddButton>
+        </li>
+        <li>
+          <Button to="/settings">
+            <img alt="Settings Button" src={NavSettingsImg} height="36" />
+          </Button>
+        </li>
+      </NavContainer>
+
   );
 }
 
