@@ -6,7 +6,7 @@ const Button = styled(Link)`
   border: none;
   background-color: transparent;
   img {
-    height: 13.7px;
+    height: 24px;
   }
 `;
 function BackButton({ linkTo }) {
