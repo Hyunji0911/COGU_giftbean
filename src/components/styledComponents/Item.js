@@ -12,7 +12,6 @@ const Container = styled.li`
   letter-spacing: -2%;
   background-color: #fff;
   box-sizing: border-box;
-  box-shadow: 5px 5px 3px 0 #000 15%;
   margin-bottom: 20px;
 
   cursor: pointer;

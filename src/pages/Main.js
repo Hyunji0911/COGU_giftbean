@@ -3,14 +3,16 @@ import Logo_row from "../assets/Logo_row.svg";
 import styled from "styled-components";
 import SortFilter from "../components/styledComponents/SortFilter";
 const Header = styled.div`
-  background-color: red;
-  height: 104px;
+  height: 114px;
+  width: 100%;
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 2;
   background-color: white;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.05);
   img {
-    line-height: 64px;
+    margin-top: 20px;
   }
 `;
 
@@ -19,7 +21,7 @@ function Main() {
     <div>
       <Header>
         <img className="header-logo" alt="header logo" src={Logo_row} />
-        <SortFilter />
+        <SortFilter margintop="20px" />
       </Header>
 
       <GifticonItem />

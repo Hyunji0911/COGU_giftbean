@@ -5,6 +5,9 @@ import Left_arrow from "../../assets/Left_arrow.svg";
 const Button = styled(Link)`
   border: none;
   background-color: transparent;
+  position: absolute;
+  left: 20px;
+  top: 20px;
   img {
     height: 13.7px;
   }

@@ -12,7 +12,6 @@ const Container = styled.div`
   top: 0;
   padding: 0 20px;
   ul {
-    background: none;
     border: none;
     display: flex;
     justify-content: center;
@@ -23,16 +22,19 @@ const Container = styled.div`
       font-weight: 400;
       font-size: 16px;
       color: #000;
+      margin-top: ${(props) => props.margintop};
+    }
+    img {
     }
   }
 `;
 
-const SortFilter = () => {
+const SortFilter = (props) => {
   return (
     <Container>
       <ul className="sort">
         <img alt="sort" src={sort} />
-        <span>등록 순</span>
+        <span margintop={props.margintop}>등록 순</span>
       </ul>
 
       <ul className="filter">
@@ -42,5 +44,4 @@ const SortFilter = () => {
     </Container>
   );
 };
-
 export default SortFilter;

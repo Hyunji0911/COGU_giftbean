@@ -2,15 +2,11 @@ import GifticonDetailModal from "./GifticonDetailModal";
 import { useState } from "react";
 import styled from "styled-components";
 import Item from "./styledComponents/Item";
-// import SortFilter from "./styledComponents/SortFilter";
 
-const Wrapper = styled.div`
-  /* display: flex; */
-`;
+const Wrapper = styled.div``;
 export const GifticonItemContainer = styled.div`
   width: 100%;
   height: 844px;
-  background-color: skyblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,9 +16,7 @@ export const GifticonItemContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: red;
     width: 350px;
-    height: 650px;
   }
 `;
 
