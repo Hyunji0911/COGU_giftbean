@@ -3,13 +3,14 @@ import sort from "../../assets/sort.svg";
 import filter from "../../assets/filter.svg";
 
 const Container = styled.div`
-  width: 350px;
+  width: 390px;
   height: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  margin: 20px 0;
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
   ul {
     background: none;
     border: none;
@@ -30,12 +31,13 @@ const SortFilter = () => {
   return (
     <Container>
       <ul className="sort">
-        <img src={sort} />
+        <img alt="sort" src={sort} />
         <span>등록 순</span>
       </ul>
+
       <ul className="filter">
         <span>카테고리</span>
-        <img src={filter} />
+        <img alt="filter" src={filter} />
       </ul>
     </Container>
   );

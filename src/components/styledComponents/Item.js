@@ -11,8 +11,10 @@ const Container = styled.li`
   box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15);
   letter-spacing: -2%;
   background-color: #fff;
-  color: #000;
   box-sizing: border-box;
+  box-shadow: 5px 5px 3px 0 #000 15%;
+  margin-bottom: 20px;
+
   cursor: pointer;
   .brand {
     font-size: 16px;
@@ -53,7 +55,7 @@ const Container = styled.li`
   }
 `;
 
-const Item = ({data, modalHandler = () => {}}) => {
+const Item = ({ data, modalHandler = () => {} }) => {
   return (
     <Container onClick={modalHandler}>
       <span className="brand">브랜드명</span>

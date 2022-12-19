@@ -30,7 +30,7 @@
   background-color: #fff;
 }
 
-.main-container::-webkit-scrollbar{
+.main-container::-webkit-scrollbar {
   display: none;
   width: 15px;
 }
