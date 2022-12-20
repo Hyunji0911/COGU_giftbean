@@ -14,7 +14,7 @@ const ToggleText = styled.div`
   font-size: 12px;
   align-items: center;
   text-align: center;
-  color: ${props => (props.toggleOn ? '#4c8c0d' : '#555555')};
+  color: ${(props) => (props.toggleOn ? "#4c8c0d" : "#555555")};
   margin-left: 8.33px;
 `;
 

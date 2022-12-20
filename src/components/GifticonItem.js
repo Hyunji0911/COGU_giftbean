@@ -2,6 +2,7 @@ import GifticonDetailModal from "./GifticonDetailModal";
 import { useState } from "react";
 import styled from "styled-components";
 import Item from "./styledComponents/Item";
+import UsedItem from "./styledComponents/UsedItem";
 
 const Wrapper = styled.div``;
 export const GifticonItemContainer = styled.div`
@@ -32,7 +33,7 @@ function GifticonItem() {
       <GifticonItemContainer>
         {isOpen ? <GifticonDetailModal modalHandler={modalHandler} /> : null}
         <ul className="ItemList">
-          <Item modalHandler={modalHandler} />
+          <UsedItem modalHandler={modalHandler} />
           <Item modalHandler={modalHandler} />
           <Item modalHandler={modalHandler} />
           <Item modalHandler={modalHandler} />

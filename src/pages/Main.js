@@ -13,6 +13,7 @@ const Header = styled.div`
   box-shadow: 0 2px rgba(0, 0, 0, 0.05);
   img {
     margin-top: 20px;
+    margin-bottom: 10px;
   }
 `;
 
@@ -21,7 +22,7 @@ function Main() {
     <div>
       <Header>
         <img className="header-logo" alt="header logo" src={Logo_row} />
-        <SortFilter margintop="20px" />
+        <SortFilter />
       </Header>
 
       <GifticonItem />
