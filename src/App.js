@@ -35,64 +35,94 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-  return (
-    <div className="app">
-      <BrowserRouter>
-        <GlobalStyle />
-        <nav>
-          <li>
-            <Link to="/">Main</Link>
-          </li>
-          <li>
-            <Link to="/add">Add Gifticon</Link>
-          </li>
-          <li>
-            <Link to="/edit">Edit Gifticon</Link>
-          </li>
-          <li>
-            <Link to="/used">Used Gifticon</Link>
-          </li>
-          <li>
-            <Link to="/loading">LoadingPage</Link>
-          </li>
-          <li>
-            <Link to="/login">LoginPage</Link>
-          </li>
-          <li>
-            <Link to="/signup">SignUpPage</Link>
-          </li>
-          <li>
-            <Link to="/settings">SettingsPage</Link>
-          </li>
-          <li>
-            <Link to="/userinfoedit">UserInfoEditPage</Link>
-          </li>
-          <li>
-            <Link to="/componenttest">ComponentTestPage</Link>
-          </li>
-        </nav>
-        <div className="main-container">
-          <main>
-            <Routes>
-              <Route path="/" element={<Main />} />
-              <Route path="/add" element={<AddGifticon />} />
-              <Route path="/edit" element={<EditGifticon />} />
-              <Route path="/used" element={<UsedGifticon />} />
-              <Route path="/loading" element={<LoadingPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signUp" element={<SignUpPage />} />
-              <Route path="/settings" element={<SettingsPage />} />
-              <Route path="/userinfoedit" element={<UserInfoEditPage />} />
-              <Route path="/componenttest" element={<ComponentTestPage />} />
-            </Routes>
-          </main>
-          <nav>
-            <NavigationBar />
-          </nav>
-        </div>
-      </BrowserRouter>
-    </div>
-  );
+	return (
+		<div className="app">
+			<BrowserRouter>
+				<GlobalStyle />
+				<nav>
+					<li>
+						<Link to="/">Main</Link>
+					</li>
+					<li>
+						<Link to="/add">Add Gifticon</Link>
+					</li>
+					<li>
+						<Link to="/edit">Edit Gifticon</Link>
+					</li>
+					<li>
+						<Link to="/used">Used Gifticon</Link>
+					</li>
+					<li>
+						<Link to="/loading">LoadingPage</Link>
+					</li>
+					<li>
+						<Link to="/login">LoginPage</Link>
+					</li>
+					<li>
+						<Link to="/signup">SignUpPage</Link>
+					</li>
+					<li>
+						<Link to="/settings">SettingsPage</Link>
+					</li>
+					<li>
+						<Link to="/userinfoedit">UserInfoEditPage</Link>
+					</li>
+					<li>
+						<Link to="/componenttest">ComponentTestPage</Link>
+					</li>
+				</nav>
+				<div className="main-container">
+					<main>
+						<Routes>
+							<Route
+								path="/"
+								element={<Main />}
+							/>
+							<Route
+								path="/add"
+								element={<AddGifticon />}
+							/>
+							<Route
+								path="/edit"
+								element={<EditGifticon />}
+							/>
+							<Route
+								path="/used"
+								element={<UsedGifticon />}
+							/>
+							<Route
+								path="/loading"
+								element={<LoadingPage />}
+							/>
+							<Route
+								path="/login"
+								element={<LoginPage />}
+							/>
+							<Route
+								path="/signUp"
+								element={<SignUpPage />}
+							/>
+							<Route
+								path="/settings"
+								element={<SettingsPage />}
+							/>
+							<Route
+								path="/userinfoedit"
+								element={<UserInfoEditPage />}
+							/>
+							<Route
+								path="/componenttest"
+								element={<ComponentTestPage />}
+							/>
+						</Routes>
+					</main>
+					<nav>
+						<NavigationBar />
+					</nav>
+				</div>
+			</BrowserRouter>
+		</div>
+	);
 }
 
 export default App;
