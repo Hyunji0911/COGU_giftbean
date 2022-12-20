@@ -71,10 +71,6 @@ export const Form = styled.form`
 	}
 `;
 
-export const SubmitButton = styled.button`
-	background: green;
-`;
-
 function GifticonForm({ headertext, buttontext }) {
 	return (
 		<GifticonFormContainer>
@@ -106,7 +102,7 @@ function GifticonForm({ headertext, buttontext }) {
 				/>
 				<div className="checkboxContainer">
 					<span>금액권</span>
-					<CheckBox id="금액권"></CheckBox>
+					<CheckBox id="금액권" />
 				</div>
 				<LabelTextInput
 					id="itemName"
@@ -139,9 +135,7 @@ function GifticonForm({ headertext, buttontext }) {
 						required
 						className="memo"></TextInput>
 				</div>
-				<div className="greenBottomButton">
-					<GreenBottomButton>{buttontext}</GreenBottomButton>
-				</div>
+					<GreenBottomButton className="greenBottomButton">{buttontext}</GreenBottomButton>
 			</Form>
 		</GifticonFormContainer>
 	);
