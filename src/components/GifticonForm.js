@@ -105,7 +105,7 @@ function GifticonForm({ headertext, buttontext }) {
 					placeholder="브랜드명을 입력하세요"
 				/>
 				<div className="checkboxContainer">
-					<p>금액권</p>
+					<span>금액권</span>
 					<CheckBox id="금액권"></CheckBox>
 				</div>
 				<LabelTextInput
