@@ -62,18 +62,10 @@ const SettingPageContainer = styled.div`
   }
 `;
 
-const LogoutButton = styled.button`
+const LogoutButton = styled(GreenButton)`
   width: 160px;
   height: 40px;
   background-color: #a72800;
-  color: #ffffff;
-  font-size: 20px;
-  font-family: "Noto Sans KR";
-  font-weight: 700;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 5px;
   margin-top: 80px;
 `;
 
