@@ -15,6 +15,9 @@ const Header = styled.div`
     margin-top: 20px;
     margin-bottom: 10px;
   }
+  .sort-Div {
+    margin-left: 20px;
+  }
 `;
 
 function Main() {
@@ -22,7 +25,9 @@ function Main() {
     <div>
       <Header>
         <img className="header-logo" alt="header logo" src={Logo_row} />
-        <SortFilter />
+        <div className="sort-Div">
+          <SortFilter />
+        </div>
       </Header>
 
       <GifticonItem />

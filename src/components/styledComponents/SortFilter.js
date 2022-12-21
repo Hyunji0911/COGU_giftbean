@@ -3,14 +3,11 @@ import sort from "../../assets/sort.svg";
 import filter from "../../assets/filter.svg";
 
 const Container = styled.div`
-  width: 390px;
+  width: 350px;
   height: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  padding: 0 20px;
   ul {
     border: none;
     display: flex;
@@ -23,8 +20,6 @@ const Container = styled.div`
       font-size: 16px;
       color: #000;
       margin-top: ${(props) => props.margintop};
-    }
-    img {
     }
   }
 `;
