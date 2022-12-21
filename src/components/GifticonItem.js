@@ -1,8 +1,8 @@
-import GifticonDetailModal from "./GifticonDetailModal";
-import { useState } from "react";
-import styled from "styled-components";
-import Item from "./styledComponents/Item";
-import UsedItem from "./styledComponents/UsedItem";
+import GifticonDetailModal from './GifticonDetailModal';
+import { useState } from 'react';
+import styled from 'styled-components';
+import Item from './styledComponents/Item';
+import UsedItem from './styledComponents/UsedItem';
 
 export const GifticonItemContainer = styled.div`
     width: 100%;
@@ -11,6 +11,7 @@ export const GifticonItemContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
+    margin-bottom: 150px;
 
     .itemList {
         display: flex;
@@ -28,22 +29,24 @@ function GifticonItem() {
     };
 
     return (
-      <div>
-        <GifticonItemContainer>
-          {isOpen ? <GifticonDetailModal modalHandler={modalHandler} /> : null}
-          <ul className="itemList">
-            <UsedItem modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-            <Item modalHandler={modalHandler} />
-          </ul>
-        </GifticonItemContainer>
-      </div>
+        <div>
+            <GifticonItemContainer>
+                {isOpen ? (
+                    <GifticonDetailModal modalHandler={modalHandler} />
+                ) : null}
+                <ul className="itemList">
+                    <UsedItem modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                    <Item modalHandler={modalHandler} />
+                </ul>
+            </GifticonItemContainer>
+        </div>
     );
 }
 

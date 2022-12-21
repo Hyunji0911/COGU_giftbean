@@ -14,6 +14,7 @@ const Container = styled.li`
     color: #000;
     box-sizing: border-box;
     cursor: pointer;
+    margin-bottom: 20px;
     .brand {
         font-size: 16px;
         line-height: 16px;
