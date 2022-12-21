@@ -1,57 +1,63 @@
-import {useState} from "react";
-import Logo from "../assets/Logo.svg";
-import Toggle from "../components/styledComponents/Toggle";
-import BackButton from "../components/styledComponents/BackButton";
-import NavigationBar from "../components/styledComponents/NavigationBar";
+import { useState } from 'react';
+import Logo from '../assets/Logo.svg';
+import Toggle from '../components/styledComponents/Toggle';
+import BackButton from '../components/styledComponents/BackButton';
+import NavigationBar from '../components/styledComponents/NavigationBar';
 import {
-  CheckBox,
-  LabelTextInput,
-  SelectBox,
-  TextInput,
-  TextInputCenter,
-} from "../components/styledComponents/Input";
+    CheckBox,
+    LabelTextInput,
+    SelectBox,
+    TextInput,
+    TextInputCenter,
+} from '../components/styledComponents/Input';
 import {
-  GreenButton,
-  GreenBottomButton,
-} from "../components/styledComponents/GreenButton";
-import styled from "styled-components";
-import SortFilter from "../components/styledComponents/SortFilter";
-import GifticonItem from "../components/GifticonItem";
+    GreenButton,
+    GreenBottomButton,
+} from '../components/styledComponents/GreenButton';
+import styled from 'styled-components';
+import SortFilter from '../components/styledComponents/SortFilter';
+import GifticonItem from '../components/GifticonItem';
 
 const Main = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
 
 function ComponentTestPage() {
-  const [checked, setChecked] = useState(false);
-  return (
-    <Main>
-      <img alt="Logo" width="50" src={Logo}></img>
-      <Toggle />
-      <p />
-      <BackButton linkTo={"/"} />
-      <NavigationBar />
-      <TextInput placeholder="TextInput" />
-      <TextInputCenter placeholder="TextInputCenter" />
-      <SelectBox>
-        <option>options</option>
-        <option>options</option>
-        <option>options</option>
-      </SelectBox>
-      <LabelTextInput
-        id="id"
-        text="LabelTextInput"
-        placeholder="LabelTextInput"
-      />
-      <CheckBox id="idd" checked={checked} checkedHandler={(e) => {setChecked(e.target.checked)}} />
-      <GreenButton>GreenButton</GreenButton>
-      <GreenBottomButton>GreenBottomButton</GreenBottomButton>
-      <GifticonItem />
-      <SortFilter />
-    </Main>
-  );
+    const [checked, setChecked] = useState(false);
+    return (
+        <Main>
+            <img alt="Logo" width="50" src={Logo}></img>
+            <Toggle />
+            <p />
+            <BackButton linkTo={'/'} />
+            <NavigationBar />
+            <TextInput placeholder="TextInput" />
+            <TextInputCenter placeholder="TextInputCenter" />
+            <SelectBox>
+                <option>options</option>
+                <option>options</option>
+                <option>options</option>
+            </SelectBox>
+            <LabelTextInput
+                id="id"
+                text="LabelTextInput"
+                placeholder="LabelTextInput"
+            />
+            <CheckBox
+                id="idd"
+                checked={checked}
+                checkedHandler={(e) => {
+                    setChecked(e.target.checked);
+                }}
+            />
+            <GreenButton>GreenButton</GreenButton>
+            <GreenBottomButton>GreenBottomButton</GreenBottomButton>
+            <GifticonItem />
+            <SortFilter />
+        </Main>
+    );
 }
 export default ComponentTestPage;
 
