@@ -14,6 +14,7 @@ const ModalContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 2;
 
     .bg {
         position: fixed;

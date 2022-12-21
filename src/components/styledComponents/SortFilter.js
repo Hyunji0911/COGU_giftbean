@@ -8,7 +8,6 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin: 20px 0;
     ul {
         background: none;
@@ -40,5 +39,4 @@ const SortFilter = () => {
         </Container>
     );
 };
-
 export default SortFilter;

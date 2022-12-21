@@ -12,7 +12,7 @@ export const HeaderContainer = styled.div`
 `;
 
 function Header() {
-    return <HeaderContainer>Header</HeaderContainer>;
+  return <HeaderContainer>Header</HeaderContainer>;
 }
 
 export default Header;
